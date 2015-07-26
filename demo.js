@@ -12,20 +12,23 @@
 /* jshint -W117 */
 
 // LOAD THE SOUNDS
-var MySound = new SpidocheAudio({
+var MySounds = new SpidocheAudio({
     sounds : {
-        chien  : {src : 'sounds/chien.mp3'},
-        cochon : {src : 'sounds/cochon.mp3'}
+        hello   : {src : 'sounds/hello.mp3'},
+        bonjour : {src : 'sounds/bonjour.mp3'},
+        anyeong : {src : 'sounds/annyeong.mp3'}
     }
 });
 
-
 // PLAY THE SOUNDS ON CLICK
 window.addEventListener('load', function(){
-    document.getElementById('chien').onclick=function(){
-        MySound.playSound('chien');
+    document.getElementById('hello_btn').onclick=function(){
+        MySounds.playSound('hello');
     };
-    document.getElementById('cochon').onclick=function(){
-        MySound.playSound('cochon');
+    document.getElementById('bonjour_btn').onclick=function(){
+        MySounds.playSound('bonjour');
+    };
+    document.getElementById('annyeong').onclick=function(){
+        MySounds.playSound('annyeong_btn');
     };
 }, false);
