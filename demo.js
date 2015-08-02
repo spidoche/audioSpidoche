@@ -5,7 +5,7 @@
  * Author  : Spidoche
  *
  * audioSpidoche demo file
- * load and play sound demo
+ * load and play sounds on click
  *
  */
 
@@ -16,7 +16,7 @@ var MySounds = new SpidocheAudio({
     sounds : {
         hello   : {src : 'sounds/hello.mp3'},
         bonjour : {src : 'sounds/bonjour.mp3'},
-        anyeong : {src : 'sounds/annyeong.mp3'}
+        annyeong : {src : 'sounds/annyeong.mp3'}
     }
 });
 
@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
     document.getElementById('bonjour_btn').onclick=function(){
         MySounds.playSound('bonjour');
     };
-    document.getElementById('annyeong').onclick=function(){
-        MySounds.playSound('annyeong_btn');
+    document.getElementById('annyeong_btn').onclick=function(){
+        MySounds.playSound('annyeong');
     };
 }, false);
